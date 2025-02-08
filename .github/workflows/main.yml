@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'path/to/csv_folder/*'  # Path where the CSV files are uploaded
+      - ''  # Path where the CSV files are uploaded
 
 jobs:
   transform_csv:
