@@ -53,7 +53,7 @@ all_data = pd.DataFrame()  # Empty DataFrame to hold all the merged data
 
 # Read and transform each CSV dynamically from the 'data' folder
 for file_name in os.listdir(data_dir):
-    if file_name.endswith(".csv"):
+    if file_name.endswith(".CSV"):
         file_path = os.path.join(data_dir, file_name)
         df = pd.read_csv(file_path)  # Read the CSV file
         transformed_df = transform_data(df)  # Apply transformations
