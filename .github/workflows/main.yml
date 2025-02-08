@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'CSV/*.csv'  # Matches any CSV file in the CSV folder
+      - 'CSV/**'  # Matches any CSV file in the CSV folder
 
   workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
 
