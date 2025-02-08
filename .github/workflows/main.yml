@@ -5,9 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'CSV/*.CSV'  # Monitors CSV files inside the CSV folder
+      - 'CSV/*.csv'  # Matches any CSV file in the CSV folder
 
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write  # Grants permission for GitHub Actions to push changes
 
 jobs:
   transform_csv:
@@ -26,6 +29,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas
 
+      - name: Download CSV files dynamically
+        run: |
+          mkdir -p data
+          curl -s https://api.github.com/repos/${{ github.repository }}/contents/CSV | jq -r '.[].download_url' | grep ".csv" | while read url; do curl -o "data/$(basename $url)" $url; done
+
       - name: Run transformation script
         run: python transform_csv.py
 
@@ -35,4 +43,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add transformed_file.csv
           git commit -m "Auto-update transformed CSV" || echo "No changes to commit"
-          git push origin main
+          git push
