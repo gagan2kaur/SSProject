@@ -47,11 +47,11 @@ def transform_data(df):
 
     return df
 
-# Directory where CSVs are downloaded
+# Directory where CSVs are uploaded
 data_dir = "CSV"
 all_data = pd.DataFrame()  # Empty DataFrame to hold all the merged data
 
-# Read and transform each CSV dynamically from the 'data' folder
+# Read and transform each CSV dynamically from the 'CSV' folder
 for file_name in os.listdir(data_dir):
     if file_name.lower().endswith(".csv"):  # This will handle both .csv and .CSV extensions
         file_path = os.path.join(data_dir, file_name)
@@ -59,7 +59,7 @@ for file_name in os.listdir(data_dir):
         transformed_df = transform_data(df)  # Apply transformations
         all_data = pd.concat([all_data, transformed_df], ignore_index=True)  # Append the data
 
-# Print the merged transformed data (optional)
+# Print the merged transformed data
 print(all_data)
 
 # Save the merged transformed data to a CSV file
