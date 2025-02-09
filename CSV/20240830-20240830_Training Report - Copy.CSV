@@ -1,0 +1,8 @@
+﻿Athlete,Team,Trim/Split Name,Date,Start Time,Duration  Total (min:sec),Distance  Total (m),Distance Rate (m/min),Speed Avg (km/h),Speed Max (km/h),Speed AvgSpeed Zone Total (km/h),Speed MaxSpeed Zone Total (km/h),DistanceSpeed Zone Total  (m),DistanceSpeed Zone 1  (m),DistanceSpeed Zone 2  (m),DistanceSpeed Zone 3  (m),DistanceSpeed Zone 4  (m),DistanceSpeed Zone 5  (m),DurationSpeed Zone 1 (min:sec),DurationSpeed Zone 2 (min:sec),DurationSpeed Zone 3 (min:sec),DurationSpeed Zone 4 (min:sec),DurationSpeed Zone 5 (min:sec),Acceleration MaxAcceleration Zone Total (m/s/s)
+"2, Athlete",RussEquestrian,Ride 1,30/08/2024,6:13:00 am,14:00,3099,222,13.3,56.2,23.9,56.2,3098,798,168,428,1665,39,8:45,0:45,1:06,3:20,0:03,8
+"4, Athlete",RussEquestrian,Ride 1,30/08/2024,6:13:00 am,14:00,3214,230,13.8,36.3,17.9,36.3,3213,877,188,379,1769,0,8:34,0:51,1:01,3:32,0:00,4.3
+"6, Athlete",RussEquestrian,Ride 1,30/08/2024,6:13:00 am,14:00,3233,231,13.9,40.8,22.2,40.8,3233,849,128,466,1781,9,8:37,0:36,1:16,3:30,0:01,4.2
+"2, Athlete",RussEquestrian,Ride 2,30/08/2024,6:40:00 am,18:00,3320,188,11.3,61.6,24.2,60,3223,1083,100,696,714,630,13:06,0:26,1:53,1:26,0:45,4.4
+"4, Athlete",RussEquestrian,Ride 2,30/08/2024,6:40:00 am,18:00,3569,202,12.1,61.3,24.4,60,3484,1257,126,525,958,618,12:57,0:33,1:24,1:55,0:45,4.6
+"2, Athlete",RussEquestrian,Ride 3,30/08/2024,7:07:00 am,16:00,3179,199,11.9,39.3,18.4,39.3,3179,973,114,745,1347,0,10:58,0:29,2:01,2:31,0:00,4.4
+"4, Athlete",RussEquestrian,Ride 3,30/08/2024,7:07:00 am,16:00,3381,212,12.7,44.1,23,44.1,3382,1056,145,723,1418,40,10:46,0:38,1:55,2:37,0:04,3.9
